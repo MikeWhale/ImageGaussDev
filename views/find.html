@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{image.created_at}}{% endblock %}
+{% block main %}
+
+<h2 class="panel-tit"><span>Find by image</span></h2>
+<div id="uploadpanle">
+  <form id="upload_form" action="/admin/upload/" enctype="multipart/form-data" method="post">
+    <div class="selete">Select image: <input type="file" name="file" id="file" /></div>
+    <div><input type="submit" value="Check!" class="super white button awesome" /></div>
+  </form>
+
+<ul class="note">
+<li>Best format for serching : <strong>PNG</strong></li>
+</ul>
+</div>
+{% endblock %}
+</body>
+</html>
